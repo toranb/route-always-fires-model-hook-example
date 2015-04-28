@@ -7,13 +7,7 @@ var Hat = Ember.Object.extend({
 });
 
 export default Ember.Route.extend({
-    queryParams: {
-      refresh: {
-        refreshModel: true
-      }
-    },
     model: function() {
-        console.log("IN Z MODEL");
         var hats = [];
         hits = hits + 1;
         for(var i = 0; i < hits; i++) {
