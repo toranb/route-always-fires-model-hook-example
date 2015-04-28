@@ -8,7 +8,7 @@ var Hat = Ember.Object.extend({
 
 export default Ember.Route.extend({
     queryParams: {
-      phat: {
+      refresh: {
         refreshModel: true
       }
     },
