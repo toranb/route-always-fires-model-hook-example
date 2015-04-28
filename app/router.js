@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-    this.route("hats", { path: "/" }, function() {
+    this.route("hats", { path: "/", queryParams: ['refresh']}, function() {
         this.route("hat", { path: "/hat/:hat_id" });
     });
 });

@@ -7,6 +7,11 @@ var Hat = Ember.Object.extend({
 });
 
 export default Ember.Route.extend({
+    queryParams: {
+      refresh: {
+        refreshModel: true
+      }
+    },
     model: function() {
         var hats = [];
         hits = hits + 1;
