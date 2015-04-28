@@ -6,6 +6,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+    this.route("hats", { path: "/", queryParams: ['phat']}, function() {
+        this.route("hat", { path: "/hat/:hat_id" });
+    });
 });
 
 export default Router;

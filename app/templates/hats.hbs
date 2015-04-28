@@ -1,0 +1,6 @@
+{{#each hat in controller}}
+    <div>{{hat.name}}</div>
+    {{#link-to "hats.hat" 0 (query-params wat='123')}}details{{/link-to}}
+{{/each}}
+
+{{outlet}}
